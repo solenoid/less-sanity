@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>MetroWest Web Developers</h1>
+					<h3 style="text-transform:regular">React.js vs. Angular.js<br>is the wrong question</h3>
+					<p>2015-03-25</p>
+					<p>
+						<a href="http://twitter.com/yieldbot">@yieldbot</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>About Me</h2>
+					<h3>Erik Solen</h3>
+					<p>I'm a FrontEnd Developer at <a href="http://www.yieldbot.com/">Yieldbot</a></p>
+					<p><a href="http://twitter.com/eriksolen">@eriksolen</a> on Twitter</p>
+					<p><a href="https://github.com/solenoid">@solenoid</a> on Github</p>
+				</section>
+
+				<section>
+					<section id="overview">
+						<h2>Overview</h2>
+						<p>We'll talk about...</p>
+						<p class="fragment">Churn</p>
+						<p class="fragment">Throwing things Away</p>
+						<p class="fragment">Modularize</p>
+						<p class="fragment grow">Developers &amp; Users</p>
+					</section>
+					<section>
+						<p class="fragment">Async</p>
+						<p class="fragment">Functional Programming</p>
+						<p class="fragment">Immutable Data</p>
+						<p class="fragment">JavaScript</p>
+						<p class="fragment">Rendering</p>
+						<p class="fragment">URLs &amp; Routing</p>
+						<p class="fragment grow">Designing Products</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Churn</h2>
+						<p>Is Unavoidable</p>
+						<h3 class="fragment">So Learning should be a primary focus</h3>
+					</section>
+					<section>
+						<p>The goal being to learn what matters even if you drop the framework or approach.</p>
+						<p>Angular 1.x is ok, but Angular 2.x is better on this front.</p>
+						<p>React's approach is very sound by leaving aspects up to you.</p>
+						<h4 class="fragment">Balance need to learn vs. productivity well</h4>
+					</section>
+					<section>
+						<h3>Understand what learning is best for</h3>
+						<p class="fragment">you</p>
+						<p class="fragment">your team</p>
+						<p class="fragment">all developers</p>
+						<p class="fragment">people who want to become developers</p>
+						<p class="fragment">people who don't want to become developers</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Throw Things Away</h2>
+					<p>Design to throw things away... <span class="fragment">this is the common case.</span></p>
+					<p class="fragment">For your own code or for frameworks and libraries</p>
+					<p class="fragment">You will always come away with experience and understanding</p>
+					<p>It's harder (mentally) to throw away monolithic things...</p>
+					<p class="fragment">but it is cleaner</p>
+				</section>
+
+				<section>
+					<h2>Modularize</h2>
+					<ul>
+						<li>Allow things to be small and decoupled</li>
+						<li>Are often tied to a specific environment</li>
+						<li>Which excludes others</li>
+					</ul>
+					<p class="fragment">Goal is to minimize dependencies.</p>
+					<p class="fragment">But decide and live with it.</p>
+					<p class="fragment">Because you should be able to throw it away.</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Developers &amp; Users</h2>
+						<p>Are people that matter.</p>
+						<p class="fragment">Don't forget that</p>
+					</section>
+					<section>
+						<h3>Developers</h3>
+						<p class="fragment">Need a good environment so they can</p>
+						<p><span class="fragment">Build</span><span class="fragment"> &amp; Deploy</span><span class="fragment"> &amp; Talk to Users</span></p>
+						<h4 class="fragment">Rinse &amp; Repeat</h4>
+					</section>
+					<section>
+						<h3>Users</h3>
+						<p class="fragment">Deserve a good experience.</p>
+						<p class="fragment">Because they want to do something</p>
+						<p><span class="fragment">Quickly</span><span class="fragment"> &amp; Understand it</span><span class="fragment"> &amp; Complain</span></p>
+						<h4 class="fragment">Rinse &amp; Repeat</h4>
+						<p class="fragment">but don't forget the Quickly &amp; Understand it parts.</p>
+						<h4 class="fragment">FrontEnd developers balance these needs</h4>
+					</section>
+				</section>
+
+				<section>
+					<h2>Data transport</h2>
+					<h3>is a mess</h3>
+					<p class="fragment">So enjoy the learning aspects.</p>
+					<p class="fragment">Really you should enjoy it<span class="fragment">, because you'll be it for a while.</span></p>
+					<ul class="fragment">
+						<li>Read up on distributed systems</li>
+						<li>Being in the browser adds complexity and limits options</li>
+						<li>Lots to do, fix, and try</li>
+						<li>You'll fail a lot</li>
+						<li class="fragment">It's ok to fail and you should be happy about it</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Async is</h2>
+						<h3>important</h3>
+						<p class="fragment">for everything</p>
+						<p class="fragment grow">but not</p>
+						<p class="fragment">so enjoy learning like <a href="http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/">here</a>.</p>
+					</section>
+					<section>
+						<ul>
+							<li>Know about events</li>
+							<li>Bet on promises</li>
+							<li>Learn about streams</li>
+							<li>Don't be satisfied</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Functional Programming</h2>
+					<p class="fragment">May not be for everybody.</p>
+					<p class="fragment">Is at least another talk, if not more.</p>
+				</section>
+
+				<section>
+					<h2>Immutable Data</h2>
+					<p class="fragment">Is really powerful.</p>
+					<p class="fragment">And is a series of talks.</p>
+				</section>
+
+				<section>
+					<h2>JavaScript</h2>
+					<h3>Is a constant</h3>
+					<p class="fragment">It is the browser environment, and more.</p>
+					<p class="fragment">Learn it and how to use it well.</p>
+					<p class="fragment">Understand when and where you'd like to transpile.</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Rendering is</h2>
+						<h3>important</h3>
+						<p>but understand what matters for you.</p>
+						<p>Users really care about this.</p>
+					</section>
+					<section>
+						<h3>Angular vs. React actually matters here</h3>
+						<p>Understand them well and choose wisely.</p>
+						<p class="fragement">Be prepared to throw them away.</p>
+						<p>They have public meeting notes so that adds great context.</p>
+						<ul>
+							<li><a href="https://docs.google.com/a/yieldbot.com/document/d/150lerb1LmNLuau_a_EznPV1I1UHMTbEl61t4hZ7ZpS0/edit">Angular Meeting Notest</a></li>
+							<li><a href="https://gist.github.com/zpao/6e12ee0f46ce87af2287#react-core-meeting-notes-2015-03-20">React Meeting Notest</a></li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Speed matters most</li>
+							<li>Experience and Developer ease matter too</li>
+							<li>Simplify things before you solve overly complex problems</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>URLs &amp; Routing</h2>
+					<p class="fragment grow">Are very important and will continue to be.</p>
+					<p class="fragment">Understanding here will pay off for a long time.</p>
+					<p class="fragment">Historically this is true.</p>
+					<p class="fragment">Angular vs. React routers.</p>
+				</section>
+
+				<section>
+					<h2>Designing Products</h2>
+					<p class="fragment">Is applying these things well.</p>
+					<h4 class="fragment">It's what we focus on here at Yieldbot.</h4>
+				</section>
+
+				<section>
+					<h2>Thanks</h2>
+					<h3>Q &amp; A</h3>
+					<p>I'm Erik Solen at <a href="http://www.yieldbot.com/">Yieldbot</a></p>
+					<p><a href="http://twitter.com/eriksolen">@eriksolen</a> on Twitter</p>
+					<p><a href="https://github.com/solenoid">@solenoid</a> on Github</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
